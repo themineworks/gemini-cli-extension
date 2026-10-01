@@ -1,0 +1,78 @@
+{
+  "name": "the-mine-works",
+  "version": "1.0.0",
+  "description": "Nine remote MCP servers from The Mine Works with 80 tools: India jobs, company diligence, recruiting, social listening, e-commerce, US and India real estate, lead generation and academic research. Pay per call on Apify.",
+  "settings": [
+    {
+      "name": "Apify API token",
+      "description": "Your Apify API token, from https://console.apify.com/account/integrations. Tool calls are pay per call, billed to your own Apify account.",
+      "envVar": "APIFY_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "india-jobs-mcp": {
+      "description": "India Jobs MCP, 14 tools. India job market data: Naukri, Indeed India, Foundit, Shine, Apna, CutShort, Hirist, Instahyre and Internshala, plus LinkedIn candidate sourcing and AmbitionBox employer snapshots.",
+      "httpUrl": "https://themineworks--india-jobs-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "company-diligence-mcp": {
+      "description": "Company Diligence MCP, 13 tools. Company diligence from official sources: SEC EDGAR, GLEIF LEI, EU VIES VAT, US state registries, UK Companies House, CourtListener, USAspending, SAM.gov and FEC, plus Trustpilot and news.",
+      "httpUrl": "https://themineworks--company-diligence-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "recruiting-jobs-mcp": {
+      "description": "Recruiting and Jobs MCP, 10 tools. Job and candidate data for recruiting: ATS postings (Greenhouse, Lever, Workday, Ashby), LinkedIn, Indeed, SimplyHired, Naukri and CutShort, plus candidate sourcing and employer snapshots.",
+      "httpUrl": "https://themineworks--recruiting-jobs-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "social-research-mcp": {
+      "description": "Social Research MCP, 8 tools. Social listening: Reddit, X, Threads, LinkedIn posts, YouTube transcripts, Google News and Google Trends.",
+      "httpUrl": "https://themineworks--social-research-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "ecommerce-intel-mcp": {
+      "description": "E-commerce Intel MCP, 8 tools. Product research: Amazon products and reviews, AliExpress prices, Shopify catalogs, TikTok Shop, Meta Ad Library and Google Trends.",
+      "httpUrl": "https://themineworks--ecommerce-intel-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "real-estate-mcp": {
+      "description": "Real Estate MCP, 8 tools. US property data: Zillow listings, sales, rentals and property details, plus Redfin, Realtor.com and Airbnb rental supply.",
+      "httpUrl": "https://themineworks--real-estate-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "lead-generation-mcp": {
+      "description": "Lead Generation MCP, 8 tools. B2B and local leads: people with work emails, email verification, website contacts, Google Maps, Yellow Pages and Trustpilot.",
+      "httpUrl": "https://themineworks--lead-generation-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "academic-research-mcp": {
+      "description": "Academic Research MCP, 6 tools. Scholarly search: OpenAlex, Crossref, arXiv, OpenCitations and PubMed.",
+      "httpUrl": "https://themineworks--academic-research-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    },
+    "india-real-estate-mcp": {
+      "description": "India Real Estate MCP, 5 tools. India property listings: 99acres, MagicBricks, NoBroker and Housing.com. Rent and sale, residential and commercial.",
+      "httpUrl": "https://themineworks--india-real-estate-mcp.apify.actor/mcp",
+      "headers": {
+        "Authorization": "Bearer $APIFY_TOKEN"
+      }
+    }
+  }
+}
